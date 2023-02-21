@@ -1,23 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 import '../assets/stylesheets/application.scss';
-
-// import { greet } from './greet';
-// import greet from './greet';
-
-// console.log(greet("Gab"));
-
-const Hello = ({ name }) => {
-  return (
-    <div>
-      Hello and welcome,
-      {name}
-    </div>
-  );
-};
+import App from "./components/app";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 if (root) {
-  root.render(<Hello name="Gab" />);
+  root.render(<App />);
 }
